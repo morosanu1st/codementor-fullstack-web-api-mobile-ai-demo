@@ -1,0 +1,12 @@
+{
+  "name": "fullstack-web-api-mobile-ai-demo",
+  "private": true,
+  "description": "Monorepo: Express AI API + vanilla web client + Expo (React Native) client stub",
+  "scripts": {
+    "setup": "npm --prefix api install",
+    "start": "npm --prefix api start",
+    "dev": "npm --prefix api run dev",
+    "test": "npm --prefix api test"
+  },
+  "license": "MIT"
+}
