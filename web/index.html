@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ask the API: full-stack AI demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Ask the API</h1>
+    <p class="muted">Web → <code>POST /api/ask</code> → LLM (or mock fallback). Status: <span id="status">checking…</span></p>
+
+    <form id="ask-form">
+      <label for="question">Your question</label>
+      <textarea id="question" name="question" rows="3" maxlength="2000" required
+        placeholder="e.g. Explain REST vs GraphQL in one paragraph"></textarea>
+      <button type="submit" id="submit">Ask</button>
+    </form>
+
+    <section id="result" hidden>
+      <h2>Answer <span id="badge" class="badge"></span></h2>
+      <p id="answer"></p>
+      <p class="muted" id="meta"></p>
+    </section>
+    <p id="error" class="error" role="alert" hidden></p>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
